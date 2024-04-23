@@ -1,0 +1,831 @@
+@font-face {
+    font-family: "averta";
+    src: url(fonts/AvertaDemo-Regular.otf);
+}
+
+* {
+    font-family: averta;
+}
+
+.hero{
+    height:  100vh;
+}
+
+.navbar .navbar-nav .nav-item:nth-child(1) .nav-link {
+    color: #848484;
+  
+}
+.logo{
+    width: 200px;
+}
+.navbar .navbar-nav .nav-item{
+    margin-left: 24px;
+}
+
+
+.hero-section {
+    align-items: center;
+    height: 90%;
+}
+
+.hero-section h1 {
+    font-weight: bold;
+    font-size: 55px;
+    color: #506269;
+}
+.hero-section h1 span{
+    color: rgb(138, 0, 0);
+}
+
+.hero-section p {
+    font-size: 24px;
+    color: #575656;
+    line-height: 30px;
+    
+}
+
+.hero-section button{
+    height: 65px;
+    border-radius: 0px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background-color: rgb(138, 0, 0);
+}
+
+.hero-section button:hover{
+    background-color: white;
+    border: 2px solid  rgb(138, 0, 0);
+    color: rgb(138, 0, 0);
+}
+
+.hero-section img{
+    width: 500px;
+}
+
+.about{
+    margin: 100px 0px;
+}
+
+.about .first-col .content-wrapper{
+    border-top: 2px solid black;
+    width: 200px;
+}
+
+.about .first-col p{
+    color: #506269;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.about .first-col img{
+    width: 192px;
+}
+
+.about .second-col .content-wrapper{
+    width: 80%;
+}
+
+.recent-projects{
+    background: #efddd4;
+    min-height: 900px;
+   
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 3s ease;    
+    margin-top: 10% ;
+    margin-left: -20%;
+    margin-right: -20%;
+   
+}
+.recent-projects.active{
+     
+    transform: translateY(0px);
+    opacity: 1;
+    margin-bottom: 5%;
+}
+
+
+.recent-projects .projects-content{
+    position: relative;
+    top: 100px;
+}
+
+.recent-projects hr{
+    width: 220px;
+    border: 1px solid #a5410f;
+    background: #a5410f;
+    margin-bottom: -5px;
+}
+
+.recent-projects .heading{
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 50px;
+    color: rgb(138, 0, 0);
+    margin-bottom: 50px;
+}
+
+.recent-projects .heading span:nth-child(1){
+    font-size: 30px;
+    position: relative;
+    left: 5px;
+}
+
+.recent-projects .projects-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 30px;   
+}
+
+.recent-projects .projects-cards .card {
+    background: rgba(253, 253, 253, 0.14);
+}
+
+.recent-projects .projects-cards .card img {
+    width: 100%;
+    transform: 0.4s;
+}
+
+
+.recent-projects .projects-cards .card:hover{
+    animation: pulse;
+    animation-duration: 0.5s;
+
+}
+
+.recent-projects .projects-cards .card h1{
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.recent-projects .projects-cards .card p{
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: white;
+}
+.recent-projects .projects-cards  .pnt h1{
+    color: rgb(138, 0, 0);;
+}
+
+.our-client .our-client-content{
+    position: relative;
+    top: 100px;
+    margin-top: 8%;
+    
+}
+
+.our-client hr{
+    width: 220px;
+    border: 1px solid rgb(34, 34, 34);
+    background-color:rgb(34, 34, 34);
+    margin-bottom: -5px;
+    margin-left: 30px;
+}
+
+
+.our-client .heading{
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 50px;
+    color: rgb(138, 0, 0);
+    margin-bottom: 70px;
+    margin-left: 30px;
+    
+}
+
+.our-client .heading span:nth-child(1){
+    font-size: 30px;
+    position: relative;
+    color: rgb(34, 34, 34);
+    left: 5px;
+    
+}
+
+.our-client .first-row{
+    display: grid;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    margin-left: 50px;
+}
+
+.why-choose-us{
+    margin-top: 400px;
+}
+
+.why-choose-us .land{
+    background-color: #FFD4D4;
+    height: 301px;
+}
+
+.why-choose-us .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;   
+}
+
+.why-choose-us .content span:nth-child(1){
+    margin-top: -50px;
+    position: relative;
+    left: 100px;
+}
+
+
+.why-choose-us .content span:nth-child(1) img {
+    width: 500px;
+}
+
+
+.why-choose-us .content span:nth-child(2){
+    width: 400px;
+    background-color: rgb(138, 0, 0);
+    height: 400px;
+    position: relative;
+    right: 150px;
+    padding: 50px;
+    color: white;
+    top: -100px;
+}
+.card, .card-header, .card-body{
+    background-color: transparent;
+    border: none;
+   
+}
+
+.contact{
+    background-color: rgb(138, 0, 0);
+    padding: 0px;
+}
+
+.contact .content h1{
+    color: white;
+    font-weight: bold;  
+}
+
+.contact .content p{
+    color: white;   
+}
+
+.contact li.list-group-item {
+    background-color: transparent;
+    border: none;
+    font-size: 19px;
+    padding-left: 0px;
+    color: white;
+    padding: 8px 0px;
+}
+
+.contact li.list-group-item ion-icon{
+    color: #d5963d;
+    font-size: 23px;
+}
+
+.contact li.list-group-item span{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+/* responsive*/
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .hero-section h1{
+        font-size: 40px;
+    }
+    .hero-section p{
+        font-size: 18px;
+    }
+    .hero-section img{
+        width: 350px;
+    }
+
+    .recent-projects hr{
+        width: 180px;
+    }
+    .recent-projects .heading{
+        font-size: 55px;
+        line-height: 47px;
+    }
+    .recent-projects .heading span:nth-child(1){
+        font-size: 25px;       
+    }
+    .our-client hr{
+        width: 138px;
+    }
+    .our-client .heading{
+        font-size: 55px;
+        line-height: 47px;       
+    }
+    .our-client .heading span:nth-child(1){
+        font-size: 25px;
+    }
+
+    .our-advantages .heading{
+        font-weight: 55px;
+        line-height: 47px;
+    }
+
+    .our-advantages .heading  span:nth-child(1){
+        font-size: 25px;
+    }
+    .first-row img{
+        width: 140px;
+    }
+    .why-choose-us .content span:nth-child(1) img{
+        width: 400px;
+    }
+    .why-choose-us .content span:nth-child(2){
+        height: 401px;
+        right: 0px;
+    }
+    .why-choose-us .content span:nth-child(2) h1{
+        font-size: 25px;
+    }
+    .why-choose-us .content span:nth-child(2) p{
+        font-size: 15px;
+    }
+    .our-advantages .heading h1{
+        font-size: 40px !important;
+    }
+    .our-advantages .heading h1 span:nth-child(1){
+        font-size: 28px;
+    }
+    .our-advantages .card-header h1{
+        font-size: 20px;
+    }
+    .our-advantages .card-body p{
+        font-size: 16px;
+    }
+    .contact{
+        padding: 70px 0px;       
+    }
+    .contact .content h1{
+        font-size: 32px;        
+    }
+    .contact .content p{
+        font-size: 15px;
+    }
+    .contact li.list-group-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 350px) {
+    .hero-section{
+        margin-top: 76px;
+        text-align: center;
+    }
+    .hero-section h1{
+        font-size: 37px;
+    }
+    .hero-section p{
+        font-size: 20px;
+    }
+    .hero-section button{
+        font-size: 19px;
+    }
+    .hero-section img{
+        width: 300px;
+        margin-top: 100px;
+    }
+
+    .our-advantages .card2 img{
+        width: 50vw;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;  
+       
+
+
+    }
+    .about{
+        margin: 300px 0px 100px 0px;
+    }
+    .about .second-col .content-wrapper{
+        width: 95%;
+        margin: 20px;
+    }
+    .recent-projects hr{
+        width: 176px;
+    }
+    .recent-projects .heading{
+        font-size: 55px;
+        
+    }
+    .recent-projects .heading span:nth-child(1){
+        font-size: 26px;       
+    }
+    .recent-projects .projects-cards{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .recent-projects{
+        margin-bottom: 0px;
+        padding-bottom: 200px;
+    }
+    .our-client .our-client-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+    .our-client hr{
+        display: none;
+    }
+    .our-client .heading{
+        font-size: 55px;      
+    }
+    .our-client .first-row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .first-row img{
+        width: 200px;
+        margin-bottom: 35px;
+    }
+    .why-choose-us .content span:nth-child(1) img{
+       display: none;
+    }
+    .why-choose-us .content {
+       justify-content: center;
+    }
+    .why-choose-us .content span:nth-child(2) {
+        right: 0px;
+        height: 401px;
+    }
+    
+    .our-advantages .heading h1{
+        text-align: center;
+        font-size: 40px !important;
+    }
+    .our-advantages {
+       text-align: center;
+    }
+    .our-advantages .card-header h1{
+        font-size: 21px;
+    }
+    .our-advantages .card-body p{
+        font-size: 15px;
+    }
+    
+    .our-advantages .card2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .content h1{
+        font-size: 23px;        
+    }
+    
+    .contact li.list-group-item {
+        font-size: 17px;
+    }
+}
+
+.card-body{
+   width:100%; 
+   height: 100%;
+   top:0;
+   left: 0;
+   position: absolute;
+   background: rgba(0, 0, 0, 0.6);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   opacity: 0;
+   transition: 0.6s;
+   z-index: 3;
+}
+.card-body:hover{
+    opacity: 1;
+}
+
+.card-body h1{
+    font-size: 55px;
+    color: #ffe100;
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    font-size: 19px;
+    color: #fff;
+}
+
+.card-body > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+
+.card-body:hover > *{
+    transform: translateY(0px);   
+}
+
+.cold{
+    background: #848484;
+    font-size: 25px;
+    margin-top: 33px;
+    min-height: 387px;
+    min-width: 100%;
+    margin-left: -20%;
+    margin-right: -20%;
+}
+
+.cold h1{
+    color: #fff;
+    display: grid;
+    justify-content: center;
+}
+.cold p{
+    color: aqua;
+    display: grid;
+    justify-content: center;
+}
+
+.contact1{
+    background-color: #a5410f;
+    padding: 0px;
+    margin-left: -20%;
+    margin-right: -20%;
+}
+
+.contact1 .content h1{
+    color: white;
+    font-weight: bold;  
+}
+
+.contact1 .content p{
+    color: white;   
+}
+
+.contact1 li.list-group-item {
+    background-color: transparent;
+    border: none;
+    font-size: 19px;
+    padding-left: 0px;
+    color: white;
+    padding: 8px 0px;
+}
+
+.contact1 li.list-group-item ion-icon{
+    color: #d5963d;
+    font-size: 23px;
+}
+
+.contact1 li.list-group-item span{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.dropbtn {
+    background-color: #fff;
+    color: #848484;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: -8px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+.test{
+    text-align: center;
+}
+
+.col .card1{
+    position: relative;
+    top: 100px;
+}
+
+.test h1{
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 50px;
+    color: rgb(138, 0, 0);
+    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+
+.our-advantages{
+    background-color: #000000;
+    padding: 50px 0px;
+}
+.our-advantages .heading h1{
+    font-size: 50px !important;
+    line-height: 47px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-top: -5px;
+    text-align: center;  
+}
+
+.our-advantages .heading p {
+    color: #fff;
+    text-align: center;
+    row-gap: 30px;
+}
+.col .card1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.card1{
+    margin-left: 5%;
+}
+
+.card-project {
+   display: flex;
+   justify-content: center;
+}
+
+.card-write h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: bold;
+    font-size: 55px;
+}
+
+.card-write h2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card-write p{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+
+
+
+
+.col .card1{
+    position: relative;
+    top: 100px;
+}
+
+
+
+.our-advantages .card2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.card-pro {
+   display: flex;
+   justify-content: center;
+ 
+   height: 100px;
+   margin-left: 5%;
+   margin-top: 10vh;
+   margin-bottom: 5vh;
+}
+
+.card-w h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: bold;
+    font-size: 55px;
+}
+
+.card-w p {
+    width: 20vw;
+    margin-left: 15%;
+    color: white;
+    font-size: 15px;
+   font-weight: 100;
+}
+
+
+.card-w p{
+    justify-content: center;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+.last{
+    background-color: rgb(138, 0, 0);
+    height: 300px;
+  }
+
+  .om{
+    color: #fff;
+    margin-left: 1%;
+  }
+
+  .om img{
+    margin-top: 2%;
+    height: 100px;
+    
+  }
+
+  .aa{
+    text-align: center;
+    display: grid;
+    color: #fff;
+    row-gap: 10px;
+    margin-top: -10%;
+    margin-right: 25%;
+  }
+  .aa .home{
+    color: #fff;
+  }
+
+  .bb{
+    text-align: center;
+    display: grid;
+    color: #fff;
+    row-gap: 10px;
+    margin-top: -8%; 
+    margin-left: 20%;
+  }
+  .bb .blog{
+    color: #fff;
+  }
+
+  .cc{
+    text-align: center;
+    display: grid;
+    color: #fff;
+    row-gap: 5px;
+    margin-top: -10%; 
+    margin-left: 70%;
+  }
+  
+
+
+  .card-i:hover{
+    cursor: pointer;
+    box-shadow: 3px  6px 18px rgba(94, 76, 76, 0.53) !important;
+  }
+  
+  
+.card-pro img {
+    transition: transform 0.3s ease-in-out; /* Add a transition effect for smooth animation */
+}
+
+.card-pro img:hover {
+    transform: translateY(-5px); /* Move the image 5px up on hover */
+}
+
+
+
+
+
